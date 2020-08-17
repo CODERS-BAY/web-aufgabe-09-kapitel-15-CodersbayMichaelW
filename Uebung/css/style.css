@@ -111,19 +111,28 @@ img {
 .detail-div {
     margin: 2rem;
     margin-top: 5rem;
-
-    display: flex;
 }
 hr {
     margin: 5rem auto 0rem auto;
     width: 90%;
 }
 .detail-div img {
-    max-width: 35vw;
-    min-width: 35vw;
-    max-height: auto;
+    min-width: 100%;
 }
 .detail-div p {
     font-size: 1.2rem;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
+}
+@media (min-width: 850px) {
+    .detail-div {
+        display: flex;
+    }
+    .detail-div img {
+        max-width: 35vw;
+        min-width: 35vw;
+        max-height: auto;
+    }
+    .detail-div p {
+        padding: 1rem 1rem;
+    }
 }
