@@ -158,7 +158,21 @@ hr {
     }
 }
 
+
+
 /* Footer */
+.arrow-top {
+    text-align: center;
+}
+.arrow-center {
+    position: relative;
+    left: 50%;
+    top: -15px;
+}
+.arrow-center img, .arrow-top img {
+    box-shadow: none;
+    transform: scale(1.5);
+}
 @media (min-width: 1080px) {
     .arrow-top {
         z-index: 2;
@@ -174,10 +188,13 @@ hr {
         min-height: 0;
 
         border: 2px solid black;
-        box-shadow: none;
+        transform: scale(1);
     }
     .arrow-top img:hover {
         transform: scale(1.3);
         box-shadow: inset 0px 0px 3px rgb(0, 0, 0);
+    }
+    .arrow-center {
+        visibility: hidden;
     }
 }
