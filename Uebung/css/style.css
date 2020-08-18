@@ -166,11 +166,15 @@ hr {
 }
 .arrow-center {
     position: relative;
-    left: 50%;
+    left: 49%;
     top: -15px;
 }
 .arrow-center img, .arrow-top img {
+    border: 1px dashed rgb(0, 0, 0);
+    border-radius: 50%;
+
     box-shadow: none;
+    padding: 0.15rem;
     transform: scale(1.5);
 }
 @media (min-width: 1080px) {
